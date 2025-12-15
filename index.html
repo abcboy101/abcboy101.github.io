@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ddddee" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#111122" />
+    <meta name="google-site-verification" content="mylnb02Mc0fzXVcO4Rs_0MlCTdfFa4GkMLT8UpvxZrg" />
+    <title>abcboy101 on GitHub Pages</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body id="main" class="mode-system">
+    <header>
+      <h1>abcboy101 on GitHub Pages</h1>
+    </header>
+    <ul>
+      <li><a href="/poke-corpus/">Poké Corpus</a></li>
+      <li><a href="/poke-brahmic/"><i>Pokémon GO</i> Hindi/​Thai Text Tool</a></li>
+    </ul>
+    <footer><a id="contact-link" href="https://bulbapedia.bulbagarden.net/wiki/Special:EmailUser/Abcboy">Contact me</a> | <a href="https://github.com/abcboy101/pogo-brahmic">GitHub</a></footer>
+    <script>
+      document.getElementById('contact-link').href = atob('bWFpbHRvOmFiY2JveUBidWxiYWdhcmRlbi5uZXQ=');
+    
+      const savedMode = localStorage.getItem('mode') ?? 'system';
+      main.classList.remove('mode-system', 'mode-light', 'mode-dark');
+      main.classList.add(`mode-${savedMode}`);
+    </script>
+  </body>
+</html>

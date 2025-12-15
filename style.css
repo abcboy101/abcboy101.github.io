@@ -1,0 +1,133 @@
+/* Colorschemes */
+
+:root {
+  --background-light: #dde;
+  --highlight-light: #eef;
+  --text-light: #111;
+  --text-gray-light: #888;
+  --text-link-light: #22F;
+  --background-dark: #112;
+  --highlight-dark: #224;
+  --text-dark: #eee;
+  --text-gray-dark: #888;
+  --text-link-dark: #88F;
+  --accent-light: skyblue;
+  --accent-dark: teal;
+  --line-height: 1.5;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: var(--background-light);
+    --highlight: var(--highlight-light);
+    --text: var(--text-light);
+    --text-gray: var(--text-gray-light);
+    --text-link: var(--text-link-light);
+    --accent: var(--accent-light);
+  }
+
+  body.mode-system {
+    background: var(--background-light);
+    color: var(--text-light);
+  }
+}
+
+.mode-light {
+  --background: var(--background-light);
+  --highlight: var(--highlight-light);
+  --text: var(--text-light);
+  --text-gray: var(--text-gray-light);
+  --text-link: var(--text-link-light);
+  --progress-bar-background: var(--highlight);
+  --progress-bar-border: var(--text);
+  --progress-bar-color: var(--progress-bar-color-light);
+  --accent: var(--accent-light);
+}
+
+body.mode-light {
+  background: var(--background-light);
+  color: var(--text-light);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--background-dark);
+    --highlight: var(--highlight-dark);
+    --text: var(--text-dark);
+    --text-gray: var(--text-gray-dark);
+    --text-link: var(--text-link-dark);
+    --progress-bar-background: var(--highlight);
+    --progress-bar-border: var(--text);
+    --progress-bar-color: var(--progress-bar-color-dark);
+    --accent: var(--accent-dark);
+  }
+
+  body.mode-system {
+    background: var(--background-dark);
+    color: var(--text-dark);
+  }
+}
+
+.mode-dark {
+  --background: var(--background-dark);
+  --highlight: var(--highlight-dark);
+  --text: var(--text-dark);
+  --text-gray: var(--text-gray-dark);
+  --progress-bar-background: var(--highlight);
+  --progress-bar-border: var(--text);
+  --progress-bar-color: var(--progress-bar-color-dark);
+  --accent: var(--accent-dark);
+}
+
+body.mode-dark {
+  background: var(--background-dark);
+  color: var(--text-dark);
+}
+
+
+/* General styles */
+
+body {
+  font-family: sans-serif;
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 1070px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", "Noto Sans CJK JP", "Noto Sans JP",
+    "Noto Sans Thai", "Siddhanta", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body > * {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--text-link);
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  text-decoration: underline;
+}
+
+h1 {
+  margin: 0;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer {
+  margin-top: 1.5rem;
+  text-align: center;
+}
